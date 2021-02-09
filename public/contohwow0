@@ -1,0 +1,92 @@
+@extends('layouts.hdota')
+
+@section('content')
+        <div class="content" style="padding-top: 200px !important;">
+	    <style>
+.t-center { text-align: center !important;}
+.pd-5 { text-align: center !important; }
+a { text-decoration: none !important; }
+.content{ background: url('https://img.wallpapersafari.com/desktop/1680/1050/77/75/kcQ5G6.jpg'); background-size:cover; }
+.no-dec { color: black !important; padding:10px; }
+</style>
+<div class="container">
+    <center>
+    <div class="row">
+      <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+    <h1 style="font-size:5rem;color:white;">DATA DENPASAR DALAM SATU PORTAL</h1></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+    <form id="dataset-search-form" class="search-form" method="get" data-module="select-switch" action="http://0.0.0.0:5000/dataset" style="padding-bottom: 0px !important; border-bottom: 0px !important;">
+        <div class="input-group search-input-group">
+            <input aria-label="Masukan topik pencarian" id="field-giant-search" type="text" class="form-control input-lg" name="q" value="" autocomplete="off" placeholder="Masukan topik pencarian">
+            <span class="input-group-btn">
+            <button class="btn btn-default btn-lg" type="submit" value="search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </span>
+        </div>
+    </form>
+    </div>
+    <div class="col-md-1"></div>
+    </div>
+</div></div><br/><br/>
+    <div class="container">
+	<div class="col-md-1 hidden-xs hidden-sm t-center">
+	    &nbsp;
+	</div>
+  <div class="wow fadeInUp" data-wow-delay="3s">
+        <div class="col-md-2 col-xs-4 t-center">
+            <a class='no-dec' href='http://0.0.0.0:5000/dataset?tags=pemerintahan'><center>
+            	<img class="pd-5" src="https://data.kutaitimurkab.go.id/base/ericsnth/icon_government.png" width="64"><br/>Pemerintahan</center>
+            </a>
+	</div>
+</div>
+<div class="wow fadeInRight" data-wow-delay="3s">
+	<div class="col-md-1 col-xs-4 t-center">
+        	<a class='no-dec' href='http://0.0.0.0:5000/dataset?tags=pendidikan'><center>
+        		<img class="pd-5" src="https://data.kutaitimurkab.go.id/base/ericsnth/icon_education.png" width="64"><br/>Pendidikan</center>
+        	</a>
+	</div>
+	<div class="col-md-1 col-xs-4 t-center">
+        	<a class='no-dec' href='http://0.0.0.0:5000/dataset?tags=kesehatan'><center>
+        		<img class="pd-5" src="https://data.kutaitimurkab.go.id/base/ericsnth/icon_health.png" width="64"><br/>Kesehatan</center>
+        	</a>
+	</div>
+	<div class="col-md-1 col-xs-4 t-center">
+        	<a class='no-dec' href='http://0.0.0.0:5000/dataset?tags=ekonomi'><center>
+        		<img class="pd-5" src="https://data.kutaitimurkab.go.id/base/ericsnth/icon_finance.png" width="64"><br/>Ekonomi</center>
+        	</a>
+	</div>
+	<div class="col-md-1 col-xs-4 t-center">
+        	<a class='no-dec' href='http://0.0.0.0:5000/dataset?tags=demografi'><center>
+        		<img class="pd-5" src="https://data.kutaitimurkab.go.id/base/ericsnth/icon_population.png" width="64"><br/>Demografi</center>
+        	</a>
+	</div>
+	<div class="col-md-1 col-xs-4 t-center">
+        	<a class='no-dec' href='http://0.0.0.0:5000/dataset?tags=perkebunan'><center>
+        		<img class="pd-5" src="https://data.kutaitimurkab.go.id/base/ericsnth/icon_sprout.png" width="64"><br/>Perkebunan</center>
+        	</a>
+	</div>
+	<div class="col-md-1 col-xs-4 t-center">
+                <a class='no-dec' href='http://0.0.0.0:5000/dataset?tags=geografi'><center>
+                        <img class="pd-5" src="https://data.kutaitimurkab.go.id/base/ericsnth/icon_geography.png" width="64"><br/>Geografi</center>
+                </a>
+	</div>
+</div>
+<div class="wow fadeInUp" data-wow-delay="3s">
+	<div class="col-md-2 col-xs-4 t-center">
+                <a class='no-dec' href='http://0.0.0.0:5000/dataset?tags=ketenagakerjaan'><center>
+                        <img class="pd-5" src="https://data.kutaitimurkab.go.id/base/ericsnth/icon_work.png" width="64"><br/>Ketenagakerjaan
+                </a>
+	</div>
+</div>
+	<div class="col-md-1 hidden-xs hidden-sm">
+	    &nbsp;
+	</div>
+    </div>
+    </center><br/>
+</div>
+<br/><br/>
+	</div>
+    </body>
+@endsection

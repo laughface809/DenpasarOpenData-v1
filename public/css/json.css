@@ -1,0 +1,31 @@
+h1{
+font-size: 30px;
+color: #fff;
+text-transform: uppercase;
+font-weight: 300;
+text-align: center;
+margin-bottom: 15px;
+}
+#dotacss {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+#dotacss td, #dotacss th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+#dotacss tr:nth-child(even){border: 1px solid rgba(255,255,255,0.3);}
+#dotacss tr:hover {background-color: rgba(255,255,255,0.3);}
+#dotacss th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: rgba(255,255,255,0.3);
+color: white;
+}
+body{
+ background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+ background: linear-gradient(to right, #25c481, #25b7c4);
+ font-family: 'Roboto', sans-serif;
+}

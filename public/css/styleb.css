@@ -1,0 +1,111 @@
+.triangle-background {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 200px 0 0;
+  border-color: #F9F9F9 transparent transparent transparent;
+  transition: border-width 0.5s;
+}
+
+.triangle-background-weak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 0;
+  border-color: #E8E8E8 transparent transparent transparent;
+  transition: border-width 0.5s;
+}
+
+.triangle-background-strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 50px 0 0;
+  border-color: #D45E99 transparent transparent transparent;
+  transition: border-width 0.5s;
+}
+
+.wrap {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+hr.style11 {
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+hr.style12 {
+  height: 10px;
+	border: 0;
+	box-shadow: 0 -10px 10px -10px #8c8b8b inset;
+}
+
+.cari .text {
+  padding-top: 5%;
+  text-align: right;
+}
+
+.dukung .text {
+  padding-top: 3%;
+}
+
+.wrap:hover .triangle-background {
+  border-width: 200px 0 0 0;
+}
+.wrap:hover .triangle-background-weak {
+  border-width: 0 100px 0 0;
+}
+.wrap:hover .triangle-background-strong {
+  border-width: 50px 0 0 0;
+}
+.wrap:hover .github {
+  border-width: 0 100px 0 0;
+}
+.wrap:hover .footer {
+  border-width: 0 0 200px 200px;
+}
+
+.github {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 0;
+  border-color: black transparent transparent transparent;
+  transition: border-width 0.5s;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 0 200px;
+  border-color: transparent transparent #333 transparent;
+  transition: border-width 0.5s;
+}
+
+.footer-two {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 0 50px;
+  border-color: transparent transparent black transparent;
+  transition: border-width 0.5s;
+}
